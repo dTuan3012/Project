@@ -1,0 +1,145 @@
+.circle,
+.circle1 {
+    width: 120px;
+    height: 120px;
+    background-color: rgb(39, 167, 247);
+    border-radius: 50%;
+    top: 140%;
+    right: 20%;
+    animation: circle 17s linear infinite;
+}
+
+.circle1{
+    top: 200%;
+    right: 60%;  
+    background-color: rgb(173, 71, 71);
+}
+
+@keyframes circle {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(150%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.shape{
+    position: absolute;
+}
+
+.square,
+.square1 {
+    width: 120px;
+    height: 120px;
+    background-color: rgba(106, 222, 115,0.4);
+    transform: rotate(45deg);
+    top: 45%;
+    right: 60%;
+    animation: shape 10s linear infinite;
+}
+
+.square1 {
+    background-color: rgba(233, 230, 64, 0.4); 
+    top: 300%;
+    right: 30%; 
+}
+
+@keyframes shape{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.star {
+    top: 50%;
+    right: 25%;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 80px solid transparent;
+    border-bottom: 80px solid transparent;
+    border-bottom-color: rgb(141, 129, 250);
+    transform: rotate(0deg) translateY(-50%);
+    animation: shape-star 8s linear infinite;
+    /* display: none; */
+}
+
+.star::before, .star::after{
+    content: '';
+    position: absolute;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-bottom-color: inherit;
+    transform: translateX(-63%) translateY(-3%) rotate(-36deg);
+}
+
+.star::after{
+    transform: translateX(-37%) translateY(-3%) rotate(36deg);
+}
+
+@keyframes shape-star{
+    0% {
+        transform: rotate(0deg) translateY(-50%);
+    }
+    100% {
+        transform: rotate(-360deg) translateY(-50%);
+    }
+    
+}
+
+.heart,
+.heart1{
+    top: 17%;
+    right: 24%;
+    background-color: rgb(225, 164, 176);
+    width: 90px;
+    height: 90px;
+    transform: rotate(-45deg);
+    animation: heart 10s linear infinite;
+}
+
+.heart1{
+    top: 260%;
+    right: 24%;
+    background-color: rgb(82, 140, 249);
+}
+
+.heart::before, .heart::after,
+.heart1::before, .heart1::after {
+    content: '';
+    position: absolute;
+    top: -55%;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background-color: inherit;
+}
+
+.heart::after,
+.heart1::after {
+    top: 0;
+    transform: rotate(90deg);
+    left: 55%;
+    background-color: inherit;
+}
+
+@keyframes heart{
+    0% {
+        transform: rotate(-67deg) translate(50%,-50%);
+    }
+    50% {
+        transform: rotate(-22deg) translate(50%,-50%);
+    }
+    100% {
+        transform: rotate(-67deg) translate(50%,-50%);
+    }
+}

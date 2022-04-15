@@ -1,0 +1,261 @@
+@media (max-width: 1023px){
+    .heart{
+        top: 360%;
+    }
+
+    .star{
+        top: 100%;
+        right: 50%;
+    }
+
+     .category{
+         padding: 15px 0;
+         position: sticky;
+         margin: 15px 0 0;
+         top: 15px;
+
+     }
+
+     .category__item{
+        width: 25%;
+        margin: 0 15px;
+        background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    }
+
+    .category__item-link{
+        width: 100%;
+    }
+
+    .intro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 15px 25px 15px;
+        margin-top: 50px;
+    }
+
+    .intro__left,
+    .intro__right{
+        width: 100%;
+    }
+
+    .intro__left{
+        display: flex;
+        justify-content: center;
+    }
+
+    .intro__left-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .intro__left-img{
+        height: 200px;
+        width: 200px;
+        position: relative;
+        top: -42px;
+    }
+    
+    .intro__left-name{
+        font-size: 27px;
+        margin-top: -20px;
+        padding: 12px 0;
+    }
+
+    .intro__left-list{
+        margin: 48px 0px 30px -36px;
+    }
+
+    .intro__right{
+        border: none;
+        padding: 0 50px;
+    }
+
+    .intro__right-contact{
+        padding: 0;
+    }
+
+    .content-love-info{
+        padding: 0 ;
+    }
+
+    .content-love-img{
+        height: 80px;
+        width: 120px;
+    }
+
+    .content-love-des{
+        font-size: 14px;
+        height: 40px;
+        overflow: hidden;
+        display: block;  
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+
+}
+
+@media (min-width: 1024px){
+    .category{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+@media (min-width: 1024px) and (max-width: 1239px) {
+
+    .category__item-name{
+        font-size: 14px;
+    }
+
+    .slogan-item{
+        min-height: 125px;
+    }
+
+    .content-item-target-img{
+        margin-top: 70px;
+    }
+
+    .content-item-target-top{
+        margin-top: 10px;
+    }
+
+    .content-item-edu-item-bottom{
+        padding-bottom: 0;
+    }
+
+    .heart1{
+        display: none;
+    }
+
+    .square1{
+        display: none;
+     }
+}
+
+@media (max-width: 739px){
+    .wide{
+        width: calc(100% - 22px);
+        margin: 0 auto;
+    }
+  
+    .category{
+        display: none;
+    }
+    
+    .slogan-heading{
+        font-size: 19px;
+    }
+
+    .intro__right{
+        padding: 0 60px;
+    }
+
+    .intro__right-contact-item-write{
+        position: unset;
+    }
+
+    .content-love-item{
+        padding: 12px;
+        margin: 0 0 15px;
+    }
+
+    .content-love-img{
+        margin-right: 0;
+        height: 60px;
+        width: 90px;
+    }
+
+    .content-love-info{
+        padding: 0 0 0 12px;
+    }
+
+    .content-love-des{
+        margin: 5px 0;
+    }
+
+    .content-love-item-bottom{
+        margin-bottom: 22px;
+    }
+
+    .slogan-img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .heart{
+        top: 570%;
+    }
+
+    .heart1{
+        top: 490%;
+    }
+}
+
+@media (max-width: 450px){
+    .t-12{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .intro__right-contact{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .q-0{
+        display: none;
+    }
+
+    .square1{
+        top: 400%;
+     }
+
+     .square{
+        right: 50%;
+     }
+
+     .circle1{
+        top: 500%;
+        right: 18%;
+    }
+
+    .heart{
+        top: 650%;
+        right: 26%;
+    }
+
+    .heart1{
+        display: none;
+    }
+
+    .star{
+        top: 220%;
+    }
+
+    .circle{
+       top: 100%;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 739px){
+    .intro__right-contact-item-write{
+       transform: translateX(10px);
+    }
+
+    /* .circle1{
+        top: 900%;
+    } */
+
+    .square1{
+       top: 300%;
+    }
+
+    /* .heart{
+        top: 700%;
+    } */
+}
